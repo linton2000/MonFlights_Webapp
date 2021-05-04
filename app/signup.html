@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MONFLIGHTS</title>
+    <link rel='icon' href='img/logo.svg'>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_purple.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href='css/shared.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Logo -->
+                <span class="material-icons">flight_takeoff</span>
+                <!-- Title -->
+                <span id='title' class="mdl-layout-title">Sign Up</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <div id='logInElement'>
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="signUp.html">Sign-up</a>
+                        <a class="mdl-navigation__link" href="login.html">Log in</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Navigation</span>
+            <nav class="mdl-navigation">
+                <button class="mdl-button" id="homePage">Home Page</button>
+                <button class="mdl-button" id="savedTrips">Saved Trips</button>
+                <button class="mdl-button" id="pastTrips">Past Trips</button>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+
+                <!-- dialog box prompting user to sign up/ login - Hash -->
+                <dialog id="tripsDialog" class="mdl-dialog">
+                    <h4 class="mdl-dialog__title"></h4>
+                    <div class="mdl-dialog__content">
+                        <p>
+                            Please login or sign up to view saved trips
+                        </p>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button id="logInButton_trips"
+                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            type="button">Log In</button>
+                        <button id="signUpButton_trips"
+                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            type="button">Sign Up</button>
+                        <button id="backButton"
+                            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                            type="button">Back</button>
+                    </div>
+                </dialog>
+
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col"> </div>
+                    <div class="mdl-cell mdl-cell--3-col">
+                        <!-- Log-in input elements go here -->
+                        <p class="largeTitleFont">SIGN UP</p>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="firstName">
+                            <label class="mdl-textfield__label" for="firstName">First Name</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="usernameSignUp">
+                            <label class="mdl-textfield__label" for="usernameSignUp">Username</label>
+                        </div> <br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="email" id="emailAddress">
+                            <label class="mdl-textfield__label" for="emailAddress">Email Address</label>
+                        </div> <br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="password" id="passwordSignUp">
+                            <label class="mdl-textfield__label" for="passwordSignUp">Password</label>
+                        </div> <br>
+                        <!-- Raised button -->
+                        <button id="signUpSnackBar" class="mdl-button mdl-js-button mdl-button--raised 
+                                mdl-button--accent" type="button">
+                            sign up
+                        </button>
+                        <div id="signUpToast" class="mdl-js-snackbar mdl-snackbar">
+                            <div class="mdl-snackbar__text"></div>
+                            <button type="button" class="mdl-snackbar__action"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+    <!-- Attach JS files -->
+    <script src="js/shared.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

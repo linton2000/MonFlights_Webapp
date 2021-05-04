@@ -1,0 +1,49 @@
+.centredText{
+    text-align: center;
+}
+
+#homeDialog{
+    width: 665px;
+}
+
+#closeButton{
+    margin-top: 20px;
+}
+
+#signUpButton{
+    margin-left: 10px;
+}
+
+#logInButton{
+    margin-left: 10px;
+}
+
+#leftSection{
+    padding: 20px; 
+    margin-left: 30px;
+}
+
+#summarySection{
+    height: 385px; 
+    margin-right: 100px;                     
+    margin-top: 20px; 
+    padding: 20px;
+}
+
+#airportChipSection{
+    overflow: auto; 
+    height: 250px;
+}
+
+#summaryButtonArea{
+    margin-top: 20px;
+}
+
+#confirmButton{
+    margin-right: 50px;
+}
+
+#homeMap{
+    margin-top: 20px; 
+    height: 630px;
+}

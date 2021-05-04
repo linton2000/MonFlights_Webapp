@@ -1,0 +1,41 @@
+.smallTitleFont{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.largeTitleFont{
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.border{
+    border: 0.5px solid teal; 
+}
+
+#logOutButton{
+    width: 100%;
+}
+
+#backButton{
+    margin: 0px;
+}
+
+#logInButton_trips{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+#signUpButton_trips{
+    margin: 0px;
+    margin-left: 10px;
+}
+
+#tripsDialog{
+    width: 300px;
+}
+
+#title{
+    margin-left: 30px;
+}
